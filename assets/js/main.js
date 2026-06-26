@@ -28,6 +28,13 @@
         navToggle.setAttribute('aria-expanded', 'false');
       }
     });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        navMenu.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
   }
 
   if (contactForm && formStatus) {
@@ -35,12 +42,12 @@
       event.preventDefault();
 
       if (!contactForm.checkValidity()) {
-        formStatus.textContent = 'Please complete the required fields before testing the demo form.';
+        formStatus.textContent = 'Please complete the required fields before testing the demo request.';
         contactForm.reportValidity();
         return;
       }
 
-      formStatus.textContent = 'Demo checked. Connect this form to a secure form service before collecting real requests.';
+      formStatus.textContent = 'Demo checked. This form is not connected yet, so no request was sent or stored.';
       contactForm.reset();
     });
   }

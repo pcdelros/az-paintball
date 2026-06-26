@@ -3,31 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contact AZ Paintball to plan a paintball game, birthday group, private event, or beginner-friendly session in Arizona.">
-  <meta name="theme-color" content="#303822">
-  <title>Contact AZ Paintball | Plan a Paintball Game in Arizona</title>
+  <meta name="description" content="Demo paintball event planning contact form with clear security notes, field placeholders, and private game request fields.">
+  <meta name="theme-color" content="#26311f">
+  <title>Plan a Paintball Game | AZ Paintball</title>
   <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
-  <header class="site-header" data-header><nav class="container nav" aria-label="Main navigation"><a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="" width="42" height="42"><span>AZ Paintball</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-nav-toggle><span class="sr-only">Menu</span><span></span><span></span><span></span></button><ul id="site-menu" class="nav-links" data-nav-menu><li><a href="index.html">Home</a></li><li><a href="fields.html">Where to Play</a></li><li><a href="beginner-guide.html">Beginner Guide</a></li><li><a href="events.html">Events</a></li><li><a href="faq.html">FAQ</a></li><li><a class="nav-cta" aria-current="page" href="contact.html">Plan a Game</a></li></ul></nav></header>
+  <header class="site-header" data-header><nav class="container nav" aria-label="Main navigation"><a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="" width="42" height="42"><span>AZ Paintball</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-nav-toggle><span class="sr-only">Menu</span><span></span><span></span><span></span></button><ul id="site-menu" class="nav-links" data-nav-menu><li><a href="index.html">Home</a></li><li><a href="fields.html">Where to Play</a></li><li><a href="beginner-guide.html">Beginner Guide</a></li><li><a href="events.html">Events</a></li><li><a href="resources.html">Resources</a></li><li><a href="faq.html">FAQ</a></li><li><a aria-current="page" class="nav-cta" href="contact.html">Plan a Game</a></li></ul></nav></header>
   <main id="content">
-    <section class="page-hero section"><div class="container narrow"><p class="eyebrow">Contact</p><h1>Plan an Arizona paintball game.</h1><p class="lead">The form is clearly marked as a demo until you connect it to a secure form handler.</p></div></section>
-    <section class="section compact"><div class="container contact-grid">
-      <aside class="card contact-card"><h2>Replace with real contact details</h2><p>[Business name]</p><p>[Phone number]</p><p>[Email address]</p><p>[Field address or service area]</p><p class="note">Do not publish personal contact details until you are ready for real visitors.</p></aside>
-      <form class="card form-card" data-contact-form novalidate>
-        <div class="form-alert" role="status" aria-live="polite" data-form-status>Demo form: connect a secure form service before launch.</div>
-        <label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name">
-        <label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
-        <label for="group-size">Estimated group size</label><input id="group-size" name="group-size" type="number" min="1" max="200" placeholder="Example: 12">
-        <label for="message">What are you planning?</label><textarea id="message" name="message" rows="5" required placeholder="Birthday party, private game, beginner group, tournament, etc."></textarea>
-        <button class="button primary" type="submit">Check demo form</button>
-        <p class="note">Security note: this static site does not collect or send form data yet.</p>
+    <section class="page-hero section"><div class="container narrow"><p class="eyebrow">Contact and planning</p><h1>Collect useful group details without pretending the form is live.</h1><p class="lead">This page includes a polished demo form. It validates fields locally, but it does not send or store anything until connected to a secure form service or backend.</p></div></section>
+    <section class="section-tight"><div class="container contact-grid">
+      <aside class="card"><span class="badge green">Replace before launch</span><h2>Business contact details</h2><p>Add the real field or organizer information here.</p><ul class="checks"><li>[Phone number]</li><li>[Email address]</li><li>[Field address or service area]</li><li>[Hours and booking response time]</li></ul><p class="note">Do not add private emails, API keys, or form tokens directly in frontend JavaScript.</p></aside>
+      <form class="form-card" data-contact-form novalidate>
+        <div class="form-row"><div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div><div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div></div>
+        <div class="form-row"><div><label for="group">Estimated group size</label><input id="group" name="group" type="number" min="1" max="300" required></div><div><label for="type">Event type</label><select id="type" name="type" required><option value="">Choose one</option><option>Birthday group</option><option>Company outing</option><option>Open play question</option><option>Tournament or league</option><option>Other</option></select></div></div>
+        <div class="form-row"><div><label for="date">Preferred date</label><input id="date" name="date" type="date"></div><div><label for="experience">Experience level</label><select id="experience" name="experience"><option>Mostly beginners</option><option>Mixed experience</option><option>Experienced players</option><option>Not sure yet</option></select></div></div>
+        <div><label for="message">What do you want to plan?</label><textarea id="message" name="message" rows="6" required placeholder="Example: private birthday game for about 12 players, mostly beginners, rental gear needed."></textarea></div>
+        <p class="form-alert" data-form-status>Demo form only. No information is sent or saved.</p>
+        <button class="button primary" type="submit">Check demo request</button>
       </form>
     </div></section>
+    <section class="section section-muted"><div class="container"><div class="section-head"><p class="eyebrow">Form security notes</p><h2>Connect the form safely before real use.</h2></div><div class="grid two"><article class="card"><h3>Recommended</h3><ul class="checks"><li>Use a trusted form service or backend endpoint</li><li>Validate on the server, not only the browser</li><li>Add spam protection and rate limiting</li><li>Collect only what is needed to respond</li></ul></article><article class="card"><h3>Avoid</h3><ul class="checks"><li>Email passwords in JavaScript</li><li>Private API keys in frontend files</li><li>Hidden admin links</li><li>Unclear fake-submit behavior</li></ul></article></div></div></section>
   </main>
-  <footer class="site-footer"><div class="container footer-simple"><p>© <span data-year></span> AZ Paintball. Replace with your real brand/legal name.</p><a href="faq.html">FAQ</a></div></footer>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="footer-brand" href="index.html"><img src="assets/img/logo.svg" alt="" width="34" height="34">AZ Paintball</a><p>Static Arizona paintball website starter for GitHub Pages.</p></div><div><h2>Pages</h2><ul><li><a href="fields.html">Where to Play</a></li><li><a href="beginner-guide.html">Beginner Guide</a></li><li><a href="events.html">Events</a></li><li><a href="resources.html">Resources</a></li></ul></div><div><h2>Security note</h2><p>The demo form does not transmit data. Add a secure endpoint before collecting real requests.</p></div></div><div class="container footer-bottom"><span>© <span data-year></span> AZ Paintball.</span><a href="privacy.html">Privacy & form notes</a></div></footer>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>
